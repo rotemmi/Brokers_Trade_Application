@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_nav"
+        android:icon="@drawable/ic_address"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/portfolio_nav"
+        android:icon="@drawable/ic_portfolio"
+        android:title="Portfolio" />
+
+    <item
+        android:id="@+id/trade_nav"
+        android:icon="@drawable/ic_trade"
+        android:title="Trade" />
+
+    <item
+        android:id="@+id/watch_list_nav"
+        android:icon="@drawable/ic_watch_list"
+        android:title="Watch List" />
+
+    <item
+        android:id="@+id/account_nav"
+        android:icon="@drawable/ic_user_name"
+        android:title="Account" />
+
+</menu>

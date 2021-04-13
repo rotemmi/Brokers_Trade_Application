@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.UserActivity"
+    android:background="@drawable/main_design">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="188dp"
+            android:layout_marginTop="36dp"
+            android:text="Portfolio"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="107dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/portfolio" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="393dp"
+            android:layout_height="235dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="12dp"
+            android:stretchColumns="1,2,3,4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Stock"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Last"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Position"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Average"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/refresh_btn_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btstyle4"
+            android:onClick="Refresh"
+            android:text="Refresh"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="352dp"
+            android:text="Cash Balances"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tableLayout"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/usd_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="20dp"
+            android:text="USD Cash:"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/Il_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="IL Cash:"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/usd_cash"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="@+id/usd_cash"
+            app:layout_constraintTop_toBottomOf="@+id/usd_cash" />
+
+        <TextView
+            android:id="@+id/total_cash"
+            android:layout_width="173dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="32dp"
+            android:text="Total Cash:"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/Il_cash"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Il_cash"
+            app:layout_constraintTop_toBottomOf="@+id/Il_cash" />
+
+        <RadioGroup
+            android:id="@+id/r_cash"
+            android:layout_width="85dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toEndOf="@+id/total_cash"
+            app:layout_constraintTop_toBottomOf="@+id/refresh_btn_id">
+
+            <RadioButton
+                android:id="@+id/shekels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cashClick"
+                android:text="Shekels"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/Usd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cashClick"
+                android:text="Usd"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

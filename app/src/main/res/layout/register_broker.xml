@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.75"
+    android:background="@drawable/main_design"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/reg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Choose Broker:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="250sp"
+                android:layout_height="70sp"
+                android:layout_weight="1"
+                android:background="@drawable/bstyle2"
+                android:foreground="@drawable/bank_polaim"
+                android:onClick="goRegisterActivity"
+                android:text="Bank_Hapoalim"
+                android:textAllCaps="false"
+                android:textSize="0sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="250dp"
+                android:layout_height="70sp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bstyle2"
+                android:foreground="@drawable/discont"
+                android:onClick="goRegisterActivity"
+                android:text="Bank_Discount"
+                android:textAllCaps="false"
+                android:textSize="0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="250sp"
+                android:layout_height="70sp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bstyle2"
+                android:foreground="@drawable/mizrahi"
+                android:onClick="goRegisterActivity"
+                android:text="Bank_Mizrahi_Tfahot"
+                android:textAllCaps="false"
+                android:textSize="0sp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="250sp"
+                android:layout_height="70sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/bstyle2"
+                android:foreground="@drawable/jerusalem"
+                android:onClick="goRegisterActivity"
+                android:text="Bank_Jerusalem"
+                android:textAllCaps="false"
+                android:textSize="0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_weight="0.5"
+        app:srcCompat="@drawable/bank"
+        app:tint="@color/white"/>
+
+</LinearLayout>
+
+

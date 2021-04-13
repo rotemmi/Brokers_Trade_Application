@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "112956018948",
+    "project_id": "erbroker-eb120",
+    "storage_bucket": "erbroker-eb120.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112956018948:android:dfc2f0ab6d2e89a3aac051",
+        "android_client_info": {
+          "package_name": "com.example.erbroker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112956018948-6ql09jcr2650nro4njgbrv1r223hmbvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAefU4XFJVD1ZssA8-hK_xHBuG3cHuX3MA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112956018948-6ql09jcr2650nro4njgbrv1r223hmbvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
